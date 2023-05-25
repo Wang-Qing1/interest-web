@@ -22,7 +22,8 @@ export default class APPHeader extends React.Component {
         </div>
         <div className={'app-other'}>
           <Tooltip title={"GitHub"}>
-            <GithubOutlined className={'app-other-icons'} onClick={() => message.info("GitHub")}/>
+            {/* 新开页面 */}
+            <GithubOutlined className={'app-other-icons'} onClick={() => window.open("https://www.baidu.com")}/>
           </Tooltip>
           <Tooltip title={'WeiBo'}>
             <WeiboCircleOutlined className={'app-other-icons'} onClick={() => message.info("WeiBo")}/>
