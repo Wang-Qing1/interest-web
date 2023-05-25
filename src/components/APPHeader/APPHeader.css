@@ -5,5 +5,48 @@
     width: 100%;
     display: flex;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
-    padding: 0.5rem 0;
+    padding: 1rem 0;
+}
+
+.app-logo {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.app-title {
+    margin-left: 0.5rem;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+    background-image: linear-gradient(60deg, #00C6FF, #8affe4); /* 渐变色 */
+    background-clip: text;
+    color: transparent; /* 文字透明 */
+}
+
+.app-other {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.app-other-icons {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.app-other-icons:not(:first-child, :last-child) {
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+}
+
+.app-other-icons:first-child {
+    margin-right: 0.6rem;
+}
+
+.app-other-icons:last-child {
+    margin-left: 0.6rem;
 }
