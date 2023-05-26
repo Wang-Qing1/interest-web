@@ -17,3 +17,26 @@
     flex-grow : 1;
   }
 ```
+
+### div内文字居中
+使用table和table-cell来完成：
+```javascript
+  <div className={'parent'}>
+        <div className={'child'}>
+          <span>这里什么都没有~(￣▽￣)~</span>
+        </div>
+      </div>
+```
+```css
+.parent {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+```

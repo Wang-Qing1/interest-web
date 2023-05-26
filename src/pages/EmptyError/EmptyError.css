@@ -1,0 +1,16 @@
+.empty-error-info {
+    font-size: 5rem;
+    color: rgba(0, 0, 0, .25);
+    text-align: center;
+}
+
+.empty-error-info-parent {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.empty-error-info-child {
+    display: table-cell;
+    vertical-align: middle;
+}
