@@ -8,7 +8,7 @@ export default class Home extends Base {
 
   renderContent() {
     return (
-      <div>
+      <div className={'app-home'}>
         首页
       </div>
     );
