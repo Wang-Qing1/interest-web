@@ -39,7 +39,7 @@ export default class APPHeader extends React.Component {
     let {showInfoModal} = this.state || {};
     return (
       <>
-        <div className={'app-header'}>
+        <div id={'app-header'} className={'app-header'}>
           <div className={'app-logo'}>
             <div className={'app-title'}>{GlobalConfig.title}</div>
           </div>
