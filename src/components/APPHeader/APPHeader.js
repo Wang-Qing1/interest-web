@@ -68,9 +68,7 @@ export default class APPHeader extends React.Component {
           footer={true}
           onCancel={() => this.setState({showInfoModal: !showInfoModal})}
         >
-          <p>Some contents...</p>
-          <p>Some contents...</p>
-          <p>Some contents...</p>
+          <p>这是一个用于练手的前端平台应用</p>
         </Modal>
       </>
     );
