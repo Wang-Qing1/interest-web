@@ -4,9 +4,9 @@
 import './Home.css';
 import Base from "../Base/Base";
 import {Collapse, Tooltip} from "antd";
-import Simple from "../Simple/Simple";
-import Complex from "../Complex/Complex";
-import Chart from "../Chart/Chart";
+import Simple from "../../components/Simple/Simple";
+import Complex from "../../components/Complex/Complex";
+import Chart from "../../components/Chart/Chart";
 
 export default class Home extends Base {
 
