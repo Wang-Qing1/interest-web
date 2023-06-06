@@ -3,7 +3,10 @@
  */
 import './Home.css';
 import Base from "../Base/Base";
-import {Card, Col, Collapse, Row, Tooltip} from "antd";
+import {Collapse, Tooltip} from "antd";
+import Simple from "../Simple/Simple";
+import Complex from "../Complex/Complex";
+import Chart from "../Chart/Chart";
 
 export default class Home extends Base {
 
@@ -19,20 +22,14 @@ export default class Home extends Base {
     return (
       <div className={'app-home'}>
         <Collapse defaultActiveKey={"simple"} ghost={true}>
-          <Collapse.Panel key={"simple"} header={this.renderHeaderTitle("简单页面", null, 1)}>
-            <Row gutter={[8,8]} wrap={true}>
-              <Col span={6}>
-                <Card title="Card title" bordered={false} extra={"Go>>"}>
-                  Card content
-                </Card>
-              </Col>
-            </Row>
+          <Collapse.Panel key={"simple"} header={this.renderHeaderTitle("简单栗子", null, 1)}>
+            <Simple />
           </Collapse.Panel>
-          <Collapse.Panel key={"complex"} header={this.renderHeaderTitle("复杂页面", null, 1)}>
-
+          <Collapse.Panel key={"complex"} header={this.renderHeaderTitle("复杂栗子", null, 1)}>
+            <Complex />
           </Collapse.Panel>
-          <Collapse.Panel key={'chart'} header={this.renderHeaderTitle("图表示例", null, 1)}>
-
+          <Collapse.Panel key={'chart'} header={this.renderHeaderTitle("图表栗子", null, 1)}>
+            <Chart />
           </Collapse.Panel>
         </Collapse>
       </div>
