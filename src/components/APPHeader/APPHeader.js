@@ -9,8 +9,6 @@ import {
   ExclamationCircleOutlined,
   GithubOutlined,
   QqOutlined,
-  WechatOutlined,
-  WeiboCircleOutlined
 } from "@ant-design/icons";
 
 export default class APPHeader extends React.Component {
@@ -47,12 +45,6 @@ export default class APPHeader extends React.Component {
             <Tooltip title={"GitHub"}>
               {/* 新开页面 */}
               <GithubOutlined className={'app-other-icons'} onClick={() => window.open("https://www.baidu.com")}/>
-            </Tooltip>
-            <Tooltip color={"#FFFFFF"} title={() => this.renderQRCode("WebBo", "https://img0.baidu.com/it/u=3336255710,1936944088&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500")}>
-              <WeiboCircleOutlined className={'app-other-icons'}/>
-            </Tooltip>
-            <Tooltip color={"#FFFFFF"} title={() => this.renderQRCode("WeChat", "https://img1.baidu.com/it/u=3582852405,4232068154&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500")}>
-              <WechatOutlined className={'app-other-icons'}/>
             </Tooltip>
             <Tooltip color={"#FFFFFF"} title={() => this.renderQRCode("QQ", "https://img2.baidu.com/it/u=359402080,1075457947&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500")}>
               <QqOutlined className={'app-other-icons'}/>
