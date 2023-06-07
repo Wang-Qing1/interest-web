@@ -7,10 +7,9 @@ import {Modal, QRCode, Tooltip} from "antd";
 import {GlobalConfig} from "../../config/GlobalConfig";
 import {
   ExclamationCircleOutlined,
-  GithubOutlined, HomeOutlined,
+  GithubOutlined,
   QqOutlined,
 } from "@ant-design/icons";
-import {NavLink} from "react-router-dom";
 
 export default class APPHeader extends React.Component {
   constructor(props) {
@@ -43,9 +42,6 @@ export default class APPHeader extends React.Component {
             <div className={'app-title'}>{GlobalConfig.title}</div>
           </div>
           <div className={'app-other'}>
-            <Tooltip title={"回到首页"}>
-              <NavLink to={'/'}><HomeOutlined className={'app-other-icons'} style={{color: '#000000'}}/></NavLink>
-            </Tooltip>
             <Tooltip title={"GitHub"}>
               {/* 新开页面 */}
               <GithubOutlined className={'app-other-icons'} onClick={() => window.open("https://github.com/Wang-Qing1/interest-web")}/>
